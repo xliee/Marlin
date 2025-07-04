@@ -733,9 +733,9 @@
     #define DEFAULT_Ki_LIST {   1.63,   1.63 }
     #define DEFAULT_Kd_LIST {  76.48,  76.48 }
   #else
-    #define DEFAULT_Kp  29.3
-    #define DEFAULT_Ki   2.43
-    #define DEFAULT_Kd  88.1
+    #define DEFAULT_Kp  28.23
+    #define DEFAULT_Ki   2.24
+    #define DEFAULT_Kd  89.03
   #endif
 #else
   #define BANG_MAX 255    // Limit hotend current while in bang-bang mode; 255=full current
@@ -836,9 +836,9 @@
   // this is for the aluminium bed with a BuildTak-like sticker on it
   // from pid autotune. "M303 E-1 C8 S60" to run autotune on the bed at 60 degreesC for 8 cycles
   #if ANYCUBIC_KOSSEL_ENABLE_BED == 1
-    #define DEFAULT_bedKp 105.8
-    #define DEFAULT_bedKi  17.7
-    #define DEFAULT_bedKd 421.9
+    #define DEFAULT_bedKp 114.33
+    #define DEFAULT_bedKi  20.52
+    #define DEFAULT_bedKd 424.58
   #elif ANYCUBIC_KOSSEL_ENABLE_BED == 2
     // TODO get real PID values for Ultrabase Bed
     #define DEFAULT_bedKp 374.03
@@ -1727,7 +1727,7 @@
  *     O-- FRONT --+
  */
 #if ANYCUBIC_PROBE_VERSION == 2
-  #define NOZZLE_TO_PROBE_OFFSET { 0, 0, -15.9 }
+  #define NOZZLE_TO_PROBE_OFFSET { 0, 0, -15.8 }
 #elif ANYCUBIC_PROBE_VERSION == 1
   #define NOZZLE_TO_PROBE_OFFSET { 0, 0, -19.0 }
 #else
