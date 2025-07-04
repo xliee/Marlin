@@ -90,7 +90,7 @@
 #endif
 #define MACHINE_NAME_SUBST TERN(CONFIGURABLE_MACHINE_NAME, "$", MACHINE_NAME)
 
-#define MARLIN_WEBSITE_URL "marlinfw.org"
+#define MARLIN_WEBSITE_URL "xliee"
 
 //#if !defined(STRING_SPLASH_LINE3) && defined(WEBSITE_URL)
 //  #define STRING_SPLASH_LINE3 WEBSITE_URL
