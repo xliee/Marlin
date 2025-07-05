@@ -836,9 +836,9 @@
   // this is for the aluminium bed with a BuildTak-like sticker on it
   // from pid autotune. "M303 E-1 C8 S60" to run autotune on the bed at 60 degreesC for 8 cycles
   #if ANYCUBIC_KOSSEL_ENABLE_BED == 1
-    #define DEFAULT_bedKp 114.33
-    #define DEFAULT_bedKi  20.52
-    #define DEFAULT_bedKd 424.58
+    #define DEFAULT_bedKp 141.03
+    #define DEFAULT_bedKi  27.77
+    #define DEFAULT_bedKd 477.52
   #elif ANYCUBIC_KOSSEL_ENABLE_BED == 2
     // TODO get real PID values for Ultrabase Bed
     #define DEFAULT_bedKp 374.03
@@ -1089,7 +1089,7 @@
     #define DELTA_SMOOTH_ROD_OFFSET 186   // (mm) Horizontal offset from middle of printer to smooth rod center.
     #define DELTA_EFFECTOR_OFFSET    31   // (mm) Horizontal offset of the universal joints on the end effector.
     #define DELTA_CARRIAGE_OFFSET    20.6 // (mm) Horizontal offset of the universal joints on the carriages.
-    #define DELTA_RADIUS (DELTA_SMOOTH_ROD_OFFSET-(DELTA_EFFECTOR_OFFSET)-(DELTA_CARRIAGE_OFFSET))          // (mm) Get this value from G33 auto calibrate
+    #define DELTA_RADIUS 127.38          // (mm) Get this value from G33 auto calibrate
   #else
     #define DELTA_RADIUS 97.0             // (mm) Get this value from G33 auto calibrate
   #endif
@@ -1727,7 +1727,7 @@
  *     O-- FRONT --+
  */
 #if ANYCUBIC_PROBE_VERSION == 2
-  #define NOZZLE_TO_PROBE_OFFSET { 0, 0, -15.8 }
+  #define NOZZLE_TO_PROBE_OFFSET { 0, 0, -15.79 }
 #elif ANYCUBIC_PROBE_VERSION == 1
   #define NOZZLE_TO_PROBE_OFFSET { 0, 0, -19.0 }
 #else
